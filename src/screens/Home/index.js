@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
+import StatusBarCustom from '../../components/statusbar';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -142,6 +143,7 @@ class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBarCustom />
         <Modal
           visible={this.state.visible}
           animationType="slide"

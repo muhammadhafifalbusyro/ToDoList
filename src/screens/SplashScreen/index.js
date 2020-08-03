@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
 import Spinner from 'react-native-spinkit';
+import StatusBarCustom from '../../components/statusbar';
 
 class SplashScreen extends React.Component {
   componentDidMount = () => {
@@ -21,6 +22,7 @@ class SplashScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBarCustom />
         <Image
           source={require('../../assets/images/logo.png')}
           style={styles.logo}
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
   logo: {
     resizeMode: 'contain',
     height: 120,
-    width: 120,
+    width: 140,
   },
   spinner: {
     marginTop: 10,
