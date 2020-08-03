@@ -12,7 +12,7 @@ function MainNavigation() {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-          animationEnable: false,
+          animationEnabled: false,
         }}>
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
         <Stack.Screen name="Home" component={Home} />
