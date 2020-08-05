@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
   },
   logo: {
     resizeMode: 'contain',
-    height: 120,
-    width: 140,
+    height: 100,
+    width: 120,
   },
   spinner: {
     marginTop: 10,
