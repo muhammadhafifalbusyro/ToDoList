@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
+import {View, Image, StyleSheet,Text} from 'react-native';
 import Spinner from 'react-native-spinkit';
 import StatusBarCustom from '../../components/statusbar';
 
@@ -24,9 +24,10 @@ class SplashScreen extends React.Component {
       <View style={styles.container}>
         <StatusBarCustom />
         <Image
-          source={require('../../assets/images/logo.png')}
+          source={require('../../assets/images/ikontodolist.png')}
           style={styles.logo}
         />
+        <Text style={styles.text1}>ToDo<Text style={styles.text2}>List</Text></Text>
         <Spinner
           visible={true}
           type="Wave"
@@ -49,9 +50,16 @@ const styles = StyleSheet.create({
   logo: {
     resizeMode: 'contain',
     height: 100,
-    width: 120,
+    width: 80,
   },
   spinner: {
     marginTop: 10,
   },
+  text1:{
+    fontSize:25,
+    fontWeight:'bold'
+  },
+  text2:{
+    color:'deepskyblue'
+  }
 });
